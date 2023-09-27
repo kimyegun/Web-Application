@@ -32,12 +32,13 @@
     .text-overlay {
       position: absolute;
       color: white;
-      top: 15%;
-      left: 45%;
+      top: 45%;
+      left: 55%;
       right: auto;
       transform: translate(-50%, -50%);
-      text-align: center;
+      text-align: left;
       width: 100%;
+      font-size: 30px;
     }
 
     .notice {
@@ -133,11 +134,33 @@
       text-decoration: none;
 
       position: absolute;
-      top: 10px;
-      right: 30vh;
+      top: 13px;
+      right: 50vh;
     }
     .button:hover {
       background-color: #0056b3;
+    }
+
+    .fontp {
+      font-size: 60px;
+    }
+
+    .bluefont {
+      color: blue;
+    }
+
+    .navp {
+      position: relative;
+      top: -20px;
+      right: 300px;
+      font-size: 21px;
+    }
+
+    .navps {
+      position: relative;
+      top: -15px;
+      right: 10px;
+      font-size: 17px;
     }
 
     * {
@@ -177,17 +200,31 @@
         style="width: 100%; height: 100%; object-fit: cover"
       />
       <div class="navbar">
-        <a href="YgSolution.html" target="_self">Yg;Solution</a>
-        <a href="CompanyIntroduction.html" target="_self">회사 소개</a>
-        <a href="Business.html" target="_self">사업 소개</a>
-        <a href="CustomerService.html" target="_self">고객센터</a>
+        <a href="YgSolution.html" target="_self"
+          ><p class="navp">Yg;<b>SOLUCTION</b></p></a
+        >
+        <div class="navps">
+          <a href="CompanyIntroduction.html" target="_self">회사 소개</a>
+          <a href="Business.html" target="_self">사업 소개</a>
+          <a href="CustomerService.html" target="_self">고객센터</a>
+        </div>
 
         <a href="Contact.html" target="_self" class="button">Contact</a>
       </div>
       <div class="text-overlay">
+        <fontp>Innovation & Challenge</fontp>
+        <br />
+        <br />
+        <strong class="fontp"
+          >와이지솔루션의 <br />
+          새로운 <span class="bluefont">혁신</span>, 그리고
+          <span class="bluefont">도전</span></strong
+        >
+        <br />
+        <br />
         <p>
-          Innovation & Challenge 와이지솔루션의 새로운 혁신, 그리고 도전 열정이
-          차있는 와이지솔루션이 여러분과 함께 새로운 혁신에 도전하겠습니다.
+          열정이 차있는 와이지솔루션이 여러분과 함께 <br />새로운 혁신에
+          도전하겠습니다.
         </p>
       </div>
     </div>
@@ -205,14 +242,14 @@
     <div class="main-container">
       <div class="cardcontainer">
         <div class="card">
-          <img src="이미지 URL" alt="카드 이미지" class="card-image" />
+          <img src="./img/br.png" alt="카드 이미지" class="card-image" />
           <div class="card-content">
             <h3 class="card-title">카드 제목</h3>
             <p class="card-description">카드에 대한 설명 또는 내용</p>
           </div>
         </div>
         <div class="card">
-          <img src="이미지 URL" alt="카드 이미지" class="card-image" />
+          <img src="./img/it.png" alt="카드 이미지" class="card-image" />
           <div class="card-content">
             <h3 class="card-title">카드 제목</h3>
             <p class="card-description">카드에 대한 설명 또는 내용</p>

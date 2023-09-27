@@ -1,37 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>YGSOLUTION - 고객센터</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        position: relative;
+        text-align: center;
+        background-color: #808080;
+      }
+      .center-image {
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-top: 0;
+      }
+
+      nav a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #333333;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      p,
+      h3 {
+        margin-top: 0;
+      }
+
+      form input[type="text"] {
+        width: 200px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+
+        box-shadow: inset -1px -1px rgba(0, 0, 0, 0.75),
+          inset -1em 0.25em rgba(255, 255, 255, 0.3),
+          0.75em 0.75em rgba(0, 0, 0, 0.15);
+
+        background-color: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.4),
+          rgba(255, 255, 255, 0.1)
+        );
+
+        color: #fff;
+
+        text-shadow: 0.05em 0.05em rgba(000, 000, 000, 0.5);
+
+        font-family: "Calibri", sans-serif;
+
+        transition: 0.35s ease-in-out;
+
+        &:focus {
+          outline: none !important ;
+          box-shadow: none !important ;
+          background-color: #fff;
+          color: #333;
+
+          transition: 0.35s ease-in-out;
+        }
+
+        &::-webkit-input-placeholder {
+          color: #fff;
+
+          transition: 0.35s ease-in-out;
+        }
+
+        &:hover::-webkit-input-placeholder {
+          color: #ccc;
+
+          transition: 0.35s ease-in-out;
+        }
+
+        &:-ms-input-placeholder {
+          color: #fff;
+        }
+      }
+
+      form button[type="submit"] {
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 4px;
+        border-style: solid;
+        border-width: 1px;
+        line-height: 40px;
+      }
+
+      .navbar {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 0px;
+        width: 100%;
+        padding-left: 70px;
+        padding-top: 40px;
+        z-index: 1;
+
+        border-bottom: 1px solid #ccc;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+
+        top: 1;
+        margin-right: 30px;
+      }
+
+      .navbar a:hover {
+        color: blue;
+      }
+      .navp {
+        position: relative;
+        top: -20px;
+        right: 300px;
+        font-size: 21px;
+      }
+
+      .navps {
+        position: relative;
+        top: -15px;
+        right: 10px;
+        font-size: 17px;
+      }
+
+      .center-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+      }
+      .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border-bottom: 1px solid #ccc;
+      }
+
+      .center a.active {
+        font-weight: bold;
+        margin-right: 10px;
+        text-decoration: underline;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .notice-section {
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .notice-section h3 {
+        color: #333333;
+        font-size: 24px;
+      }
+
+      .notice-section p {
+        color: #666666;
+      }
+      .footer {
+        display: flex;
+        justify-content: center;
+        height: 15vh;
+      }
+      .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; /* 글자 색상을 변경하세요. */
+      }
+    </style>
   </head>
+
   <body>
-    <a
-      href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
-      target="_blank"
-    ></a>
+    <div class="navbar">
+      <a href="YgSolution.html" target="_self"
+        ><p class="navp">Yg;<b>SOLUCTION</b></p></a
+      >
+      <div class="navps">
+        <a href="CompanyIntroduction.html" target="_self">회사 소개</a>
+        <a href="Business.html" target="_self">사업 소개</a>
+        <a href="CustomerService.html" target="_self">고객센터</a>
+      </div>
 
-    <h3>공지사항</h3>
-    <ul>
-      <li>순서 없는목록1</li>
-      <li>순서 없는목록2</li>
-      <li>순서 없는목록3</li>
-    </ul>
+      <a href="Contact.html" target="_self" class="button">Contact</a>
+    </div>
 
-    <ol>
-      <li>순서 있는 목록1</li>
-      <li>순서 있는 목록2</li>
-      <li>순서 있는 목록3</li>
-    </ol>
-    <h3>웹 개발 환경 준비</h3>
+    <header class="header">
+      <img src="./img/company.png" alt="" style="width: 65%; height: 400px" />
 
-    <dl>
-      <dt>html</dt>
-      <dd>-웹 페이지 개발을 위한 마크업 언어</dd>
-      <dt>CSS</dt>
-      <dd>-웹 페이지 디자인을 위한 언어</dd>
-      <dt>자바스크립트</dt>
-      <dd>-웹 페이지를 사용자와 동적처리를 위한 언어</dd>
-    </dl>
+      <div class="overlay-text">
+        <h3>YGSOLUCTION</h3>
+        <h1>고객센터</h1>
+      </div>
+    </header>
+
+    <nav class="center">
+      <div class="menu-item">
+        <a href="" class="active">공지사항</a>
+      </div>
+      <div class="menu-item">
+        <a href="">고객문의</a>
+      </div>
+    </nav>
+    <div class="center">
+      <section class="center notice-section">
+        <p>
+          NOTICE<br />공지사항<br />와이지 솔루션에서 알리는 새로운 소식
+          입니다.<br />
+        </p>
+      </section>
+
+      <form action="/search" method="get">
+        <select name="notice" id="notice">
+          <option value="제목">제목</option>
+          <option value="내용">내용</option>
+        </select>
+
+        <input type="text" name="q" placeholder="검색어를 입력하세요" />
+        <button type="submit">검색</button>
+      </form>
+
+      <script src="./script.js"></script>
+    </div>
+    <div class="footer">
+      <footer>대한민국 경기도 시흥시 장현천로 170</footer>
+    </div>
   </body>
 </html>
